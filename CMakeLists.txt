@@ -25,3 +25,4 @@ endfunction()
 
 add_pcl_tool(pcd_info src/pcd_info.cpp)
 add_pcl_tool(pcd_voxel_downsample src/voxel_downsample.cpp)
+add_pcl_tool(pcd_sor src/pcd_sor.cpp)
