@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(PCL REQUIRED COMPONENTS common io filters)
 
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
+
 function(add_pcl_tool tool_name source_file)
     add_executable(${tool_name} ${source_file})
 
